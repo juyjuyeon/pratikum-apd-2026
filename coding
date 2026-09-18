@@ -11,11 +11,11 @@ total_berat_akhir = total_berat_kg * 1.05
 total_berat_gram = total_berat_akhir * 1000  
 
 print("Total berat awal bagasi:", total_berat_kg, "kg")
-print("Total berat akhir bagasi (+5%):", total_berat_akhir, "kg")
+print("Total berat akhir bagasi (+5%):", total_berat_akhir)
 print("Total berat akhir dalam gram:", total_berat_gram, "gram")
 
 rata_rata = total_berat_akhir / len([bagasi_1, bagasi_2, bagasi_3, bagasi_4, bagasi_5, bagasi_6])
-print("Rata-rata berat bagasi per orang:", rata_rata)
+print("Rata-rata berat bagasi per orang:", rata_rata) 
 
 bolean = nim < rata_rata
 print("Apakah nim lebih kecil dari rata-rata?:", bolean)
