@@ -20,11 +20,12 @@ if nama_panggilan == "wili" and nim == "22":
     else:
         print("Pilihan BBM tidak valid.")
 
+    if harga_bbm_per_liter > 0:
         Total_Harga = harga_bbm_per_liter * jumlah_liter
 
         if jumlah_liter >= 10:
             Diskon = Total_Harga * 0.10          
-        elif jumlah_liter >= 5:
+        elif jumlah_liter <= 5:
             Diskon = Total_Harga * 0.05
         else:
             Diskon = 0  
@@ -48,22 +49,23 @@ if nama_panggilan == "wili" and nim == "22":
 else:
     print("Login Gagal, Silahkan coba lagi") 
 
-garis = "-" * 88
+garis1 = "-" * 88
+garis2 = "=" * 88
 
-print("\n" + "=" * 88)
+print("\n" + garis2)
 print("                                 STRUK TRANSAKSI BBM                                  ")
-print("=" * 88)
+print(garis1)
 print(f" Nama_Panggilan  : {nama_panggilan}")
-print(f" NIM           : {nim}")
-print(f" Status Member : {Status_Keanggotaan}")
-print(garis)
+print(f" NIM             : {nim}")
+print(f" Status Member   : {Status_Keanggotaan}")
+print(garis2)
 print(f"| {'Pilihan_BBM':<15} | {'Harga/L':<10} | {'Liter':<7} | {'Total Awal':<12} | {'Total Diskon':<12} | {'Total Bayar':<12} |")
-print(garis)
+print(garis1)
 print(f"| {pilihan_bbm:<15} | Rp{harga_bbm_per_liter:<8} | {jumlah_liter:<7.1f} | Rp{Total_Harga:<10.0f} | Rp{Total_Diskon:<10.0f} | Rp{Total_Bayar:<10.0f} |")
-print(garis)
+print(garis2)
 print(" Rincian Diskon:")
 print(f" - Diskon Pembelian : Rp {Diskon:,.0f}")
 print(f" - Diskon Member    : Rp {Diskon_member:,.0f}")
-print("=" * 88)
-
+print(garis2)
+        
 
