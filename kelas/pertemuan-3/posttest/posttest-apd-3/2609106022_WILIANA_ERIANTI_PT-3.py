@@ -21,30 +21,31 @@ if nama_panggilan == "wili" and nim == "22":
         print("Pilihan BBM tidak valid.")
 
     if harga_bbm_per_liter > 0:
-        Total_Harga = harga_bbm_per_liter * jumlah_liter
+        Total_awal = harga_bbm_per_liter * jumlah_liter
 
         if jumlah_liter >= 10:
-            Diskon = Total_Harga * 0.10          
-        elif jumlah_liter <= 5:
-            Diskon = Total_Harga * 0.05
+            Diskon = Total_awal * 0.10          
+        elif jumlah_liter >= 5:
+            Diskon = Total_awal * 0.05
         else:
             Diskon = 0  
 
         Status_Keanggotaan = input("Status Keanggotaan (Ya/Tidak): ")
         if  Status_Keanggotaan == "Ya":
             Status_Keanggotaan = "Member"
-            Diskon_member = Total_Harga * 0.02
+            Diskon_member = Total_awal * 0.02
         else:
             Status_Keanggotaan = "Non-Member"
             Diskon_member = 0
+        
         Total_Diskon = Diskon + Diskon_member
-        Total_Harga = Total_Harga - Total_Diskon
+        Total_Harga = Total_awal - Total_Diskon
 
         Total_Bayar = Total_Harga - Diskon 
         print("\n--- Total Pembayaran ---")
-        print(f"Total Harga : Rp{int(Total_Harga):,}".replace(",", "."))
+        print(f"Total Harga : Rp{int(Total_awal):,}".replace(",", "."))
         print(f"Diskon      : Rp{int(Diskon):,}".replace(",", "."))
-        print(f"Total Bayar : Rp{int(Total_Bayar):,}".replace(",", "."))
+        print(f"Total Bayar : Rp{int(Total_Harga):,}".replace(",", "."))
 
 else:
     print("Login Gagal, Silahkan coba lagi") 
