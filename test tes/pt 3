@@ -1,0 +1,44 @@
+# # angka = 11
+
+# if angka < 10: # Kondisi percabangan IF
+#     print("Angka kurang dari 10") 
+
+# if umur == int(input("Masukkan umur: ")): # Input umur
+# # Misalkan, umur = 17
+# if umur >= 17:
+#     print("Kamu sudah bisa membuat KTP") # Blok if dijalankan karena
+#     # kondisi True
+# else:
+#     print("Kamu belum bisa membuat KTP") # Blok else tidak dijalankan 
+
+# if kendaraan == "mobil":
+#     tarif_parkir = 10000
+# elif kendaraan == "motor":
+#     tarif_parkir = 5000
+# else:
+#     tarif_parkir = 15000
+# # Menampilkan tarif parkir yang harus dibayar
+
+# print("Tarif parkir yang harus dibayar:", tarif_parkir)
+
+# nilai = int(input("Masukkan nilai: ").lower())
+
+# if nilai >= 10: 
+#     if nilai >= 20: 
+#         if nilai >= 30:
+#             print("Angka besar")
+#         print("Angka sedang")
+#     print("Angka kecil")
+
+# umur = 20
+# if umur >= 16:
+# status = "Boleh masuk"
+# else:
+# status = "Dilarang masuk"
+
+# if total_pembelian > 200000: 
+#     if total_pembelian > 100000: 
+#         if total_pembelian <= 100000: 
+#             print("Tidak dapat diskon")
+#     print("Dapat diskon 10%")
+# print("Dapat diskon 30%")            
