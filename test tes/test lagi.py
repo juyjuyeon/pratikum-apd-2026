@@ -153,3 +153,102 @@
 # print(list_maba)
 # list_maba.append("jaehyun NIM 10")
 # print(list_maba)
+
+
+# kartu = {"merah", "merah", "biru", "hijau"}
+# kartu.discard("kuning")
+# kartu.remove("merah")
+# print(kartu)
+
+# aslab1 = {"fina", "shasha", "risma"}
+# aslab2 = {"larry", "attar", "haekal"}
+# gabung = aslab1.union(aslab2)
+# print(gabung)
+
+# Biodata = {
+# "Nama" : "Siti Julpa",
+# "NIM" : 25091060,
+# "KRS" : ["Struktur Data", "Basis Data"],
+# "Mahasiswa_Aktif" : True,
+# "Instagram" : "julpatarr"
+# }
+
+# print(f"Nama saya adalah {Biodata.get('Nama')}")
+# print(Biodata.get("Nama"))
+# print(Biodata.get("Alamat"))
+# print(Biodata.get("Alamat", "Key untuk alamat tidak ada"))
+
+# game = {
+# "pou" : "chill",
+# "genshin impact" : "action",
+# "valorant" : "fps",
+# "minecraft" : "sandbox",
+# "mobile legend" : "moba"
+# }
+# for i in game:
+#     print(i)
+# for i in game.keys():
+#     print(i)    
+
+# game = {
+# "pou" : "chill",
+# "genshin impact" : "action",
+# "valorant" : "fps",
+# "minecraft" : "sandbox",
+# "mobile legend" : "moba"
+# }
+# # for i in game.values():
+# #     print(i)
+
+# # for i, j in game.items():
+# #     print(f"{i} adalah jenis game {j}")'
+
+# game["resident evil"] = "horror"
+#     print(game)
+
+# aset = {
+# "jenis" : "rumah",
+# "harga" : 120000000,
+# "alamat" : "Jl. Raya No. 1",
+# "berpenghuni" : True,
+# "luas" : "120m x 80m"
+# }
+# print(aset)
+# cache = aset.pop("luas")
+# print(aset)
+# print(aset.get("luas"))
+# print(cache)
+
+# aset = {
+# "jenis" : "rumah",
+# "harga" : 120000000,
+# "alamat" : "Jl. Raya No. 1",
+# "berpenghuni" : True,
+# "luas" : "120m x 80m"
+# }
+
+# aset_baru = aset.copy
+# print(aset)
+# print(aset_baru)
+
+# key = "ayam geprek", "ayam goreng", "ayam bakar",
+# value = 12000
+# menu = dict.fromkeys(key, value)
+
+# print(menu)
+
+poli_umum = {"Andi", "Budi", "Citra", "Doni"}
+poli_gigi = {"Citra", "Doni", "Eka", "Fani"}
+gabungan_poli = poli_umum.union(poli_gigi)
+
+print(gabungan_poli)
+
+
+produk = { 
+    "nama_produk1" : "tepung"
+    "harga" : "10.000"
+    "stok" : "7 karton"
+
+    "nama_produk2" : ""
+
+}
