@@ -25,3 +25,4 @@ bagasi_tengah = list_bagasi[2:5]
 
 print("Daftar seluruh bagasi:", list_bagasi)
 print("Bagasi di posisi tengah (indeks 2-4):", bagasi_tengah)
+
